@@ -11,8 +11,8 @@ export default function ModalScreen(props) {
    </TouchableOpacity>
 
    <Text style={styles.titulo}>{props.data.nome}</Text>
-   <Text style={styles.sinopse}>{props.data.sinopse}</Text>
-   <Text style={styles.descricao}>{props.data.descricao}</Text>
+   <Text style={styles.sinopse}>Sinopse:</Text>
+   <Text style={styles.descricao}>{props.data.sinopse}</Text>
    </View>
    
    </View>
