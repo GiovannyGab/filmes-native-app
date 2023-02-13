@@ -1,12 +1,12 @@
 import React from 'react';
 import { View,Text, StyleSheet, TouchableOpacity } from 'react-native';
 
-export default function ModalScreen() {
+export default function ModalScreen(props) {
  return (
     
    <View style={styles.container}>
    <View style={styles.modalContainer}>
-   <TouchableOpacity style={styles.btnVoltar}>
+   <TouchableOpacity style={styles.btnVoltar} onPress={props.voltar}>
    <Text style={{color:"#fff", fontSize:16}}>Voltar</Text>
    </TouchableOpacity>
 
@@ -32,5 +32,29 @@ const styles = StyleSheet.create({
         backgroundColor:"#121212",
         borderBottomLeftRadius:5,
         borderTopRightRadius:5,
+    },
+    btnVoltar:{
+        backgroundColor:"#E52246",
+        padding:10,
+        borderTopLeftRadius:5,
+        borderTopRightRadius:5,
+    },
+    titulo:{
+        textAlign:'center',
+        fontSize:26,
+        color:"#FFF",
+        padding:10,
+        fontWeight:'bold'
+    },
+    sinopse:{
+        color:"#fff",
+        fontSize:18,
+        marginBottom:8,
+        marginLeft:10,
+    },
+    descricao:{
+        color:"#fff",
+        marginLeft:10,
+        marginRight:10
     }
 })

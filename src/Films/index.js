@@ -17,7 +17,7 @@ export default function Films({ data }) {
         </View>
       </View>
       <Modal animationType="slide" visible={visibleModal} transparent={true}>
-      <ModalScreen/>
+      <ModalScreen data={data} voltar={()=>setVisibleModal(false)}/>
       </Modal>
     </View>
   );
