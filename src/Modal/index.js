@@ -10,9 +10,9 @@ export default function ModalScreen(props) {
    <Text style={{color:"#fff", fontSize:16}}>Voltar</Text>
    </TouchableOpacity>
 
-   <Text style={styles.titulo}>titulo</Text>
-   <Text style={styles.sinopse}>sinopse:</Text>
-   <Text style={styles.descricao}>descriçao:</Text>
+   <Text style={styles.titulo}>{props.data.nome}</Text>
+   <Text style={styles.sinopse}>{props.data.sinopse}</Text>
+   <Text style={styles.descricao}>{props.data.descricao}</Text>
    </View>
    
    </View>
